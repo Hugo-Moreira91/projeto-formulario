@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Formulário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <div class="texto-informativo">
+            <h1>
+                FICOU COM DÚVIDA? 
+                <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p class="paragrafo">
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+            </p>
+        </div>
+
+        <form class="formulario" id="formulario" action="#" method="post" autocomplete="on">
+            <input class="input-dados" type="text" name="nome-cliente" id="nome-cliente" placeholder="Nome completo *">
+            <span class="mensagem-aviso">campo obrigatório</span>
+
+            <input class="input-dados" type="email" name="email-cliente" id="email-cliente" placeholder="Email *">
+            <span class="mensagem-aviso">campo obrigatório</span>
+
+            <input class="input-dados" type="tel" name="telefone-cliente" id="telefone-cliente" placeholder="Telefone *">
+            <span class="mensagem-aviso">campo obrigatório</span>
+
+            <textarea class="input-dados" name="mensagem-cliente" id="mensagem-cliente" placeholder="Mensagem *" rows="5"></textarea>
+            <span class="mensagem-aviso">campo obrigatório</span>
+
+            <p class="aviso">* campos obrigatórios</p>
+
+            <input class="botao-submit" type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <script src="./src/js/form.js"></script>
+</body>
+</html>

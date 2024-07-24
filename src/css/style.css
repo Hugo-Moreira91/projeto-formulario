@@ -1,0 +1,99 @@
+body{
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 60px;
+}
+
+.texto-informativo{
+    max-width: 300px;
+    color: #FFFFFF;
+}
+
+.texto-informativo h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.texto-informativo .paragrafo{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario{
+    max-width: 340px;
+    padding: 22px;
+    background-color: #FFFFFF;
+}
+
+.input-container{
+    margin-bottom: 6px;
+}
+
+.input-dados{
+    display: block;
+    width: 300px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    resize: none;
+}
+
+.input-dados::placeholder{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-placeholder);
+}
+
+.mensagem-aviso{
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0;
+    margin-bottom: 6px;
+}
+
+.aviso{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+.botao-submit{
+    width: 100%;
+    padding: 12px 0;
+    background: var(--cor-botao);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.botao-submit:hover{
+    background: var(--cor-botao-hover);
+}
+
+.input-erro{
+    border: 1px solid var(--campo-erro);
+}
+
+.input-preenchido{
+    border: 1px solid var(--campo-preenchido);
+}
+
+.mensagem-erro{
+    opacity: 1;
+    color: var(--campo-erro);
+}
